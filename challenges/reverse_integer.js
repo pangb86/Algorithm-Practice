@@ -1,4 +1,6 @@
 // Given a 32-bit signed integer, reverse digits of an integer.
+// Return 0 if the reversed number is outside the 32-bit signed integer
+// range.
 
 var reverse = function(x) {
     let num_str = x.toString();
@@ -24,9 +26,17 @@ var reverse = function(x) {
     }
 
     let rev_pos_str = rev_pos_arr.join("").substr(last_zero);
+    let final_num = 0;
+
     if (neg == true) {
-        return parseInt("-" + rev_pos_str);
+        final_num = parseInt("-" + rev_pos_str);
     } else {
-        return parseInt(rev_pos_str);
+        final_num = parseInt(rev_pos_str);
+    }
+
+    if (final_num < -2147483648 || final_num > 2147483647) {
+      return 0;
+    } else {
+      return final_num;
     }
 };
