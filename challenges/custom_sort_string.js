@@ -17,7 +17,7 @@ var customSortString = function(S, T) {
     // check if letter we're looking at is in the sorted string
     if (S.includes(T.charAt(i))) {
       // buid a letter count
-      if (letterCount[T.charAt(i)] == undefined) {
+      if (letterCount[T.charAt(i)] === undefined) {
         letterCount[T.charAt(i)] = 1;
       } else {
         letterCount[T.charAt(i)] += 1;

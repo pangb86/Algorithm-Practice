@@ -13,13 +13,13 @@ var firstUniqChar = function(s) {
   }
 
   for (var key in count) {
-    if (count[key] == 1) {
+    if (count[key] === 1) {
       letter = key;
       break;
     }
   }
 
-  if (letter != -1) {
+  if (letter !== -1) {
     return s.indexOf(letter);
   } else {
     return -1;

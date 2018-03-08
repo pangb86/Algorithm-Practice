@@ -10,7 +10,7 @@ var countBits = function(num) {
     let count = 0;
 
     for (var i = 0; i < num_bin.length; i++) {
-      if (num_bin[i] == "1") {
+      if (num_bin[i] === "1") {
         count += 1;
       }
     }
