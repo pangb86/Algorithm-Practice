@@ -5,7 +5,7 @@
 def reverse(x)
     num_string = x.to_s
 
-    if num_string[0] === "-"
+    if num_string[0] == "-"
         neg = true
         num_string = num_string[1..-1]
     end

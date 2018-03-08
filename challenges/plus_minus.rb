@@ -12,7 +12,7 @@ def plusMinus(arr)
       pos += 1
     elsif el < 0
       neg += 1
-    elsif el === 0
+    elsif el == 0
       zero += 1
     end
   end
