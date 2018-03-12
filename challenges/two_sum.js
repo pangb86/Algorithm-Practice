@@ -13,3 +13,11 @@ function twoSum(nums, target) {
     }
   }
 }
+
+function twoSumFaster(nums, target) {
+  for (var i = 0; i < nums.length; i++) {
+    if (nums.includes(target - nums[i])) {
+      return [i, nums.indexOf(target - nums[i])];
+    }
+  }
+}
