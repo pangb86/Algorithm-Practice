@@ -13,7 +13,6 @@ function caesarCipher(str, shift) {
   return result;
 }
 
-
 function shiftWord(s, k) {
   const charArr = s.split("");
   const lettersLower = "abcdefghijklmnopqrstuvwxyz";
