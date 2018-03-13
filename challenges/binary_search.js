@@ -1,4 +1,4 @@
-// recursive binary search of a sorted array
+// recursive binary search of a sorted array given an array and a target
 
 function brSearch(arr, target) {
   let mid = Math.floor(arr.length / 2);
