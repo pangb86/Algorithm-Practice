@@ -55,7 +55,6 @@ const textDollar = function(num) {
       if ((word = digits[intArr[2]])) {
           wordArr.push(word + 'Hundred');
       }
-
     }
   }
   // return the words reversed and add Dollars
