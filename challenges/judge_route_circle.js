@@ -10,7 +10,7 @@
 var judgeCircle = function(moves) {
   let x = 0;
   let y = 0;
-
+  // iterate over the moves and keep track of x/y coordinates
   moves.split("").forEach(move => {
     if (move === "R" || move === "L") {
       move === "R" ? x++ : x--;
@@ -18,6 +18,6 @@ var judgeCircle = function(moves) {
       move === "U" ? y++ : y--;
     }
   });
-
+  // if it ends up at the origin, it made a circle
   return x === 0 && y === 0;
 };

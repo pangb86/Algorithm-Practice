@@ -9,7 +9,8 @@ var findWords = function(words) {
   const middleRow = "asdfghjklASDFGHJKL";
   const bottomRow = "zxcvbnmZXCVBNM";
   let result = [];
-
+  // iterate over each word and see if it can be formed with just one
+  // row of keyboard letters
   words.forEach(word => {
     if (confirmRow(word, topRow) || confirmRow(word, middleRow) || confirmRow(word, bottomRow)) {
       result.push(word);
@@ -18,13 +19,15 @@ var findWords = function(words) {
 
   return result;
 };
-
+// helper function that takes in a word and and a row string
 var confirmRow = function(word, row) {
+  // iterate over each character in the word and see if it's in the row
+  // string
   for (var i = 0; i < word.length; i++) {
     if (!row.includes(word[i])) {
       return false;
     }
   }
-
+  // return true if all the characters are included
   return true;
 };

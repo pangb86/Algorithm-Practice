@@ -6,6 +6,6 @@
 function findMissingNum(arr1, arr2) {
   let sum1 = arr1.reduce((total, current) => total + current);
   let sum2 = arr2.reduce((total, current) => total + current);
-
+  // the missing number is the difference of the sums of the arrays
   return sum1 - sum2;
 }

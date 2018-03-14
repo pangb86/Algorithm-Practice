@@ -5,13 +5,14 @@
 // # string conversion within your method.
 
 function digitalRoot(num) {
+  // keep summing each digit of the number until it's a single digit(<10)
   while (num >= 10) {
     num = rootStep(num);
   }
 
   return num;
 }
-
+// helper function that sums each digit in a number
 function rootStep(num) {
   let sum = 0;
 

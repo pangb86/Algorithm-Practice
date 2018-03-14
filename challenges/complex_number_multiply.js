@@ -9,15 +9,19 @@
 // convert it to the form of 0+2i.
 
 var complexNumberMultiply = function(a, b) {
+  // split a and b into its real and imaginary parts
   let a_split = a.split("+");
   let b_split = b.split("+");
+  // get the real parts of a and b
   let a_real = parseInt(a_split[0]);
   let b_real = parseInt(b_split[0]);
+  // remove the character i to get the imaginary coefficients of a and b
   let a_imag = parseInt(a_split[1].split("i")[0]);
   let b_imag = parseInt(b_split[1].split("i")[0]);
-
+  // calculate the real part and the imaginary coefficient of the
+  // product of a and b
   let result_real = a_real * b_real - a_imag * b_imag;
   let result_imag = a_real * b_imag + a_imag * b_real;
-
+  // return the reconstructed result string
   return `${result_real}+${result_imag}i`;
 };

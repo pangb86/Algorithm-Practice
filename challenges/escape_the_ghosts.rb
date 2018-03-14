@@ -14,17 +14,21 @@
 # Return True if and only if it is possible to escape.
 
 def escape_ghosts(ghosts, target)
+    # calculate how many steps the player is from the target
     target_x = target[0]
     target_y = target[1]
     steps = target[0].abs + target[1].abs
-
+    # iterate over each ghost
     ghosts.each do |ghost|
+        # calculate how many steps the ghost is from the target
         steps_x = (ghost[0] - target_x).abs
         steps_y = (ghost[1] - target_y).abs
         ghost_steps = steps_x + steps_y
         steps_player = ghost[0].abs + ghost[1].abs
+        # if the ghost is closer or the same distance away from the
+        # target as the player, return false
         return false if ghost_steps <= steps
     end
-
+    # return true if none of the ghosts can catch the player
     true
 end

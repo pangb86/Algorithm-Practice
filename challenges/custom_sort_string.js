@@ -9,9 +9,11 @@
 // Return any permutation of T (as a string) that satisfies this property.
 
 var customSortString = function(S, T) {
+  // count hash with the key being the letter and the value being it's
+  // frequency
   let letterCount = {};
+  // result string
   let result = "";
-
   // iterate over the string to be sorted
   for (var i = 0; i < T.length; i++) {
     // check if letter we're looking at is in the sorted string
@@ -22,23 +24,21 @@ var customSortString = function(S, T) {
       } else {
         letterCount[T.charAt(i)] += 1;
       }
-    // if it's not a letter we're interested in, just push it onto the
-    // result
+    // if it's not a letter we're interested in, just add it onto the
+    // result string
     } else {
       result += T.charAt(i);
     }
   }
-
   // iterate over the custom ordered string
   for (var j = 0; j < S.length; j++) {
-    // grab the number of times a character repeats
+    // grab the number of times a character repeats in the unsorted
     let repeats = letterCount[S.charAt(j)];
-    // push that letter that many times
+    // push that character that many times
     for (var k = 1; k <= repeats; k++) {
       result += S.charAt(j);
     }
   }
-
-  // return the sorted result string
+  
   return result;
 };

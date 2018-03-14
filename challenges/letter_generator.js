@@ -4,7 +4,8 @@
 
 function letterGenerator(word) {
   let index = 0;
-
+  // Key takeaway: the inner function next has access to index even after
+  // letterGenerator has returned
   return {
     next: () => {
       if (index < word.length) {
