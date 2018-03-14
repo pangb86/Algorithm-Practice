@@ -1,6 +1,6 @@
 // recursive binary search of a sorted array given an array and a target
 
-function brSearch(arr, target) {
+function binarySearch(arr, target) {
   let mid = Math.floor(arr.length / 2);
 
   if (arr[mid] === target) {
@@ -18,7 +18,7 @@ function brSearch(arr, target) {
     slicedArr = arr.slice(0, mid);
   }
 
-  let idx = brSearch(slicedArr, target);
+  let idx = binarySearch(slicedArr, target);
 
   if (idx === -1) {
     return -1;
