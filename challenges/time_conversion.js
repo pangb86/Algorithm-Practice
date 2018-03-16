@@ -6,7 +6,7 @@
 // a 24-hour clock.
 
 function convertTime(str) {
-  // split at the colons
+  // split input at the colons
   let timeArr = str.split(":");
   // get the hours, minutes, seconds, and AM/PM
   let hours = timeArr[0];
