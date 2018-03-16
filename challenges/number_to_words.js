@@ -34,7 +34,7 @@ const textDollar = function(num) {
     let piece = parseInt(pieces[i]);
     if (piece) {
       // split piece into separate integers
-      let intArr = pieces[i].split('').reverse().map(parseFloat);
+      let intArr = pieces[i].split("").reverse().map(parseFloat);
       // if tens place is 10, add 10 to the digits place
       if (intArr[1] === 1) {
           intArr[0] += 10;
@@ -53,7 +53,7 @@ const textDollar = function(num) {
       }
       // add hundred if it exists
       if ((word = digits[intArr[2]])) {
-          wordArr.push(word + 'Hundred');
+          wordArr.push(word + "Hundred");
       }
     }
   }
