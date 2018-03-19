@@ -4,7 +4,7 @@ function longestUniqueSubstring(input) {
     var str = "";
     var longestStr = "";
     var hash = {};
-    
+
     for (var i = 0; i < chars.length; i++) {
       currChar = chars[i];
 
