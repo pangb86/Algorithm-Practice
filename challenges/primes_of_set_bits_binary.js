@@ -8,15 +8,19 @@
 
 var countPrimeSetBits = function(L, R) {
   let count = 0;
-
+  // iterate over the range L to R inclusive
   for (let i = L; i <= R; i++) {
+    // convert each number to a binary string
     let binString = (i).toString(2);
     let ones = 0;
+    // iterate over the string ang count the ones
     for (let j = 0; j < binString.length; j++) {
       if (binString[j] === "1") {
         ones++;
       }
     }
+    // determine if the number of ones is a prime number
+    // add one to the count if it is
     if (isPrime(ones)) {
       count++;
     }
