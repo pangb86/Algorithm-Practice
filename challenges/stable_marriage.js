@@ -1,16 +1,16 @@
-let men = {
+let menList = {
 	'ryan': 	['lizzy', 'sarah', 'zoey', 'daniella'],
 	'josh': 	['sarah', 'lizzy', 'daniella', 'zoey'],
 	'blake': 	['sarah', 'daniella', 'zoey', 'lizzy'],
 	'connor': 	['lizzy', 'sarah', 'zoey', 'daniella']
 };
 
-let women = {
+let womenList = {
 	'lizzy': 	['ryan', 'blake', 'josh', 'connor'],
 	'sarah': 	['ryan', 'blake', 'connor', 'josh'],
 	'zoey':  	['connor', 'josh', 'ryan', 'blake'],
 	'daniella':	['ryan', 'josh', 'connor', 'blake']
-}
+};
 
 function stableMarriage(men, women) {
   let matches = {};
@@ -63,4 +63,4 @@ function stableMarriage(men, women) {
   return matches;
 }
 
-stableMarriage(men, women);
+stableMarriage(menList, womenList);
