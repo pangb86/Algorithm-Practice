@@ -73,3 +73,16 @@ Array.prototype.myFindIndex = function(callback) {
 
   return null;
 };
+
+Array.prototype.myReduce = function(callback, accum) {
+  accum = accum || this[0];
+
+  for (let i = 0; i < this.length; i++) {
+    if (i === 0 && accum === this[0]) {
+      continue;
+    }
+    accum = callback(accum, this[i], i, this);
+  }
+
+  return accum;
+};
