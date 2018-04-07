@@ -23,3 +23,53 @@ Array.prototype.myFilter = function(callback) {
 
   return result;
 };
+
+Array.prototype.myMap = function(callback) {
+  let result = [];
+
+  this.myEach((el) => {
+    result.push(callback(el));
+  });
+
+  return result;
+};
+
+Array.prototype.myEvery = function(callback) {
+  this.myEach((el) => {
+    if (!callback(el)) {
+      return false;
+    }
+  });
+
+  return true;
+};
+
+Array.prototype.mySome = function(callback) {
+  this.myEach((el) => {
+    if (callback(el)) {
+      return true;
+    }
+  });
+
+  return false;
+};
+
+Array.prototype.myFind = function(callback) {
+  this.myEach((el) => {
+    if (callback(el)) {
+      return el;
+    }
+  });
+
+  return null;
+};
+
+Array.prototype.myFindIndex = function(callback) {
+  for (let i = 0; i < this.length; i++) {
+    if (callback(this[i])) {
+      return i;
+    }
+  }
+
+  return null;
+};
