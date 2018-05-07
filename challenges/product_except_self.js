@@ -14,7 +14,8 @@ function productExceptSelf(numArray) {
 
   // From the back, we multiply the current output element (which represents the product
   // on the left of the index, and multiplies it by the product on the right of the element)
-	let product = 1;
+	product = 1;
+	
 	for (let i = size - 1; i > -1; i--) {
 		output[i] = output[i] * product;
 		product = product * numArray[i];
