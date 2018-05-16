@@ -22,7 +22,6 @@ function threeSumBetter(arr, target) {
   // from two corners of the array and move them toward each other
   let left;
   let right;
-
   // sort the elements in ascending order
   arr.sort(numberSort);
 
