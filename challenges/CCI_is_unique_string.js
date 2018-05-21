@@ -5,6 +5,8 @@
 function isUnique(str) {
   // return false if it has more than 26 characters
   // Note: only if the input is just letters
+  // Note: Extended ASCII is 256 characters,
+  //       standard ASCII is 128 characters
   if (str.length > 26) { return false; }
   // create a hash to store letters and booleans
   let letterHash = {};
@@ -25,6 +27,8 @@ function isUnique(str) {
   return true;
 }
 // O(n) time
+// Note: could be argued it runs in O(1) time because it will
+//       not exceed the size of the charset
 // O(1) space
 
 // no additional data structures used solution
@@ -45,8 +49,8 @@ function isUnique2(str) {
 
 // no additional data structures used solution
 // allowed to modify the input string
-// sort the input string
-// check each consecutive character
+// 1. sort the input string
+// 2. check each consecutive character
 function isUnique3(str) {
   str = str.split("").sort().join("");
 
