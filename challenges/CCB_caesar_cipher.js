@@ -36,3 +36,5 @@ function shiftWord(s, k) {
 
   return result;
 }
+// O(n) time complexity
+// O(n) space complexity

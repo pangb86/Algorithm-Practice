@@ -25,3 +25,5 @@ var complexNumberMultiply = function(a, b) {
   // return the reconstructed result string
   return `${result_real}+${result_imag}i`;
 };
+// O(1) time complexity
+// O(1) space complexity

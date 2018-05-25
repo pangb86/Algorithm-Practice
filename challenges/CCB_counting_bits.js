@@ -21,3 +21,5 @@ var countBits = function(num) {
 
   return result;
 };
+// O(n) time complexity
+// O(n) space complexity
