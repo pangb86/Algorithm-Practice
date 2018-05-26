@@ -22,3 +22,5 @@ var rotateString = function(A, B) {
   // return false if A cannot equal B after the rotations
   return false;
 };
+// O(n) time complexity
+// O(1) space complexity

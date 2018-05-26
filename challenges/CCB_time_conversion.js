@@ -22,3 +22,5 @@ function convertTime(str) {
   // return combined result
   return `${hours}:${minutes}:${seconds}`;
 }
+// O(1) time complexity
+// O(1) space complexity

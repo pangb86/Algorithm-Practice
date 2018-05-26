@@ -21,7 +21,7 @@ var selfDividingNumbers = function(left, right) {
     }
     // test if every digit is a divisor of the current number
     let test = (digits.every(digit => i % parseInt(digit) === 0));
-    // if it passes, push it into the results array 
+    // if it passes, push it into the results array
     if (test) {
       result.push(i);
     }
@@ -29,3 +29,5 @@ var selfDividingNumbers = function(left, right) {
 
   return result;
 };
+// O(n) time complexity
+// O(n) space complexity
