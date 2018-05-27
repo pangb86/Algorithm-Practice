@@ -16,3 +16,4 @@ function diagonalDiff(arr) {
 }
 
 // time complexity is O(n) where n is the number of rows
+// O(1) space complexity
