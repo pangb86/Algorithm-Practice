@@ -25,3 +25,5 @@ var lengthOfLongestSubstring = function(s) {
 
   return length;
 };
+// O(n) time complexity
+// O(1) space complexity
