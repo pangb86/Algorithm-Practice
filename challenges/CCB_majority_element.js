@@ -17,8 +17,10 @@ var majorityElement = function(nums) {
     if (count[num] > nums.length / 2) return num;
   });
   // iterate over the counter hash and check if each element's
-  // frequency is over half the length of the array 
+  // frequency is over half the length of the array
   for (var key in count) {
     if (count[key] > nums.length / 2) return parseInt(key);
   }
 };
+// O(n) time complexity
+// O(n) space complexity
