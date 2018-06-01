@@ -33,8 +33,9 @@ function replaceCheck(a, b) {
 
 function insertCheck(a, b) {
   let idx1 = 0;
-  let idx2 = 1;
-
+  let idx2 = 0;
+  // a is the shorter string
+  // b is the longer string
   while (idx2 < b.length && idx1 < a.length) {
     if (a.charAt(idx1) !== b.charAt(idx2)) {
       if (idx1 !== idx2) {
@@ -42,6 +43,7 @@ function insertCheck(a, b) {
       }
       idx2++;
     } else {
+      // if the characters are the same increment both indexes
       idx1++;
       idx2++;
     }
