@@ -39,3 +39,5 @@ function addPoint(matrix, point, value) {
   // point is a point to be pushed in
   matrix[point[0]][point[1]] = value;
 }
+// O(n) time complexity
+// O(n) space complexity
