@@ -21,3 +21,5 @@ var judgeCircle = function(moves) {
   // if it ends up at the origin, it made a circle
   return x === 0 && y === 0;
 };
+// O(n) time complexity
+// O(1) space complexity
