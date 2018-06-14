@@ -24,3 +24,5 @@ function rootStep(num) {
 
   return sum;
 }
+// O(n) time complexity
+// O(1) space complexity

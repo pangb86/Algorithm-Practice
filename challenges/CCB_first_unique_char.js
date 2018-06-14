@@ -30,3 +30,5 @@ var firstUniqChar = function(s) {
     return -1;
   }
 };
+// O(n) time complexity
+// O(1) space complexity

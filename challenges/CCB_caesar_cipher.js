@@ -11,7 +11,7 @@ function caesarCipher(str, shift) {
     result.push(shiftWord(word, shift));
   });
 
-  return result.join(".");
+  return result.join(" ");
 }
 // helper function that encodes a passed in word
 function shiftWord(s, k) {
