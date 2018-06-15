@@ -9,3 +9,5 @@ function findMissingNum(arr1, arr2) {
   // the missing number is the difference of the sums of the arrays
   return sum1 - sum2;
 }
+// O(1) time complexity
+// O(1) space complexityCCB
