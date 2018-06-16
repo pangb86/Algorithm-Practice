@@ -31,8 +31,7 @@ function numberSort(a, b) {
   return a - b;
 }
 
-// O(n) time complexity
-// O(n) space complexity
+// Complement Hash solution
 // loop through the input array
 // see target minus the current element exists in the hash
 // add the current element to the hash
@@ -51,3 +50,5 @@ function pairSumBetter(arr, target) {
 
   return 0;
 }
+// O(n) time complexity
+// O(n) space complexity
