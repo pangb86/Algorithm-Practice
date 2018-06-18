@@ -3,8 +3,8 @@ def bubble_sort(arr)
 
   while swapped
     swapped = false
-    arr.each_with_index do |el, idx|
-      if el > arr[idx + 1]
+    (arr.length - 2).times do |idx|
+      if arr[idx] > arr[idx + 1]
         arr[idx], arr[idx + 1] = arr[idx + 1], arr[idx]
         swapped = true
       end
