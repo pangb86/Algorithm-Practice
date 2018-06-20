@@ -30,3 +30,5 @@ var isAnagram = function(s, t) {
 
   return true;
 };
+// O(n) time complexity
+// O(1) space complexity
