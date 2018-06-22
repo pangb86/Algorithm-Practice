@@ -1,7 +1,7 @@
 // Write a JavaScript function that takes a string and returns true if
 // it's a palindrome, false if it's not.
 
-function isPalindrome (string) {
+function isPalindrome(string) {
   var length = string.length;
   // iterate over the first half of the string
   for (var i = 0; i < length / 2; i++) {
@@ -15,3 +15,5 @@ function isPalindrome (string) {
   // if we have checked each letter, it's a palindrome
   return true;
 }
+// O(n) time complexity
+// O(1) space complexity
