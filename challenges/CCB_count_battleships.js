@@ -28,3 +28,5 @@ var countBattleships = function(board) {
 
   return count;
 };
+// O(n * m) time complexity
+// O(1) space complexity
